@@ -30,3 +30,11 @@ cacheSolve <- function(x, ...) {
                 MC$setInvMatrix(inv)
                 return(inv)
 }
+
+# This is the example of these two functions:
+# x <- matrix(c(1, 0, 0, 0, 1, 0, 0, 0, 1), nrow = 3, ncol = 3)
+# y <- matrix(c(1, 0, 0, 0, 1, 0, 0, 0, 1), nrow = 3, ncol = 3)
+# MC <- makeCacheMatrix(x)
+# cacheSolve(MC) # I can use this to solve x
+# MC$set(y) # We can change the variable by set()
+# cacheSolve(MC) # we can solve this matrix by cache
